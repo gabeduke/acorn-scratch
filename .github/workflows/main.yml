@@ -29,5 +29,5 @@ jobs:
         username: dukeman
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
     - run: |
-        acorn build -t docker.io/${{ github.repository }}:${{ steps.tag.outputs.tag }} .
-        acorn push docker.io/${{ github.repository }}:${{ steps.tag.outputs.tag }}
+        acorn build -t docker.io/dukeman/acorn-scratch:${{ steps.tag.outputs.tag }} .
+        acorn push docker.io/dukeman/acorn-scratch:${{ steps.tag.outputs.tag }}
