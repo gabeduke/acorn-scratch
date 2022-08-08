@@ -26,7 +26,7 @@ jobs:
     - uses: acorn-io/actions-login@v1
       with:
         registry: docker.io
-        username: yourDockerHubUsername
+        username: dukeman
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
     - run: |
         acorn build -t docker.io/${{ github.repository }}:${{ steps.tag.outputs.tag }} .
