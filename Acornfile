@@ -1,0 +1,7 @@
+containers: {
+  app: {
+    build: "."
+    ports: expose: "8080/http"
+    if args.dev { dirs: "/app": "./" }
+  }
+}
