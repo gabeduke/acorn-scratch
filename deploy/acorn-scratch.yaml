@@ -1,0 +1,12 @@
+apiVersion: api.acorn.io/v1
+kind: App
+metadata:
+  name: scratch
+  namespace: acorn
+spec:
+  image: dukeman/acorn-scratch:latest
+  ports:
+  - protocol: http
+    publish: true
+    serviceName: scratch.leetserve.com
+    targetServiceName: app
