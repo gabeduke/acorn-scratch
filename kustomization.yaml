@@ -5,6 +5,5 @@ resources:
 configurations:
 - deploy/kustomizeconfig/acorn_app.yaml
 images:
-- digest: sha256:e1ce28637b0cf56e7e1a396ade75a70ae3fffbc7
-  name: dukeman/acorn-scratch
-  newName: docker.io/dukeman/acorn-scratch
+- name: docker.io/dukeman/acorn-scratch
+  newTag: v0.1.0

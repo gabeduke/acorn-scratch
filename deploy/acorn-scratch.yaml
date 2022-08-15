@@ -4,7 +4,7 @@ metadata:
   name: scratch
   namespace: acorn
 spec:
-  image: dukeman/acorn-scratch:latest
+  image: docker.io/dukeman/acorn-scratch
   ports:
   - protocol: http
     publish: true

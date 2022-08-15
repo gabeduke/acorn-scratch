@@ -44,7 +44,7 @@ func main() {
 
 	r.GET("/", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
-			"i_am": "home",
+			"serving": "home",
 		})
 	})
 
